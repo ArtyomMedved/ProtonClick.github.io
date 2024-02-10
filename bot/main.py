@@ -6,7 +6,7 @@ bot = Bot('6816226713:AAFlwqnsck6uYlVtcNQ1ugSYsi-BvYaaDfU')
 dp = Dispatcher(bot)
 
 game_list = InlineKeyboardMarkup(row_width=2)
-game_list.add(InlineKeyboardButton(text='Запустить игру', web_app=WebAppInfo(url='https://artyommedved.github.io/ProtonClicker.github.io/')))
+game_list.add(InlineKeyboardButton(text='Запустить игру', web_app=WebAppInfo(url='https://artyommedved.github.io/ProtonClick.github.io/')))
 
 @dp.message_handler(commands=['start'])
 async def cmd_random(message: types.Message):

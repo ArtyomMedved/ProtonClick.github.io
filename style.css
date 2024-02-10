@@ -41,6 +41,7 @@ input {
   display: flex;
   justify-content: center;
   border: 2px solid blue;
+  height: 50px;
 }
 
 .btn-menu {
