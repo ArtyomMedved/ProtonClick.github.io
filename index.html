@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">
+			<div class="item">
+                <input id="number-diet" class="js-number" type="number" name="number" value="1" readonly>
+				<br>
+				<button class="btn" id="btn1"></button>
+			</div>
+			<div class="barmenu">
+				<button class="btn-menu">Друзья</button>
+				<button class="btn-menu">Рейтинг</button>
+				<button class="btn-menu">Задания</button>
+				<button class="btn-menu">Бусты</button>
+			</div>
+		</div>
+	</div>
+	</div>
+    <script>function countFunc(count) {
+        var btnPlus = count.querySelector('.btn');
+        var field = count.querySelector('.js-number');
+        var fieldValue = parseFloat(field.value, 10);
+    
+        btnPlus.addEventListener('click', function() {
+            fieldValue++;
+            field.value = fieldValue;
+          });
+    }
+    
+    var counts = document.querySelectorAll('.item');
+    counts.forEach(countFunc);</script>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

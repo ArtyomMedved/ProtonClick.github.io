@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	touch-action: manipulation;
+	width: 420px;
+	height: 600px;
+}
+
+
+.item {
+	text-align: center;
+	width: 418px;
+	height: 680px;
+    border: 2px solid black;
+	margin: auto;
+	background: rgb(239 239 239);
+}
+
+.btn {
+	display: inline-block;
+	border: none;
+    background-image: url(./photo/btn1.png);
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+	margin-top: 100px;
+}
+
+input {
+    text-align: center;
+    font-size: 16px;
+	margin-top: 100px;
+}
+
+.usercard {
+	text-align: center;
+}
+
+.barmenu {
+  display: flex;
+  justify-content: center;
+  border: 2px solid blue;
+}
+
+.btn-menu {
+	font-size: 16px;
+	margin: 5px;
+}
