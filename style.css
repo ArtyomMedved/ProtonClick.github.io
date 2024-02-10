@@ -4,7 +4,7 @@ body {
 	font-size: 18px;
 	touch-action: manipulation;
 	width: 420px;
-	height: 650px;
+	height: 700px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -13,7 +13,7 @@ body {
 .item {
 	text-align: center;
 	width: 418px;
-	height: 600px;
+	height: 650px;
 	background: rgb(239 239 239);
 }
 
