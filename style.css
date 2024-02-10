@@ -14,7 +14,6 @@ body {
 	text-align: center;
 	width: 418px;
 	height: 650px;
-    border: 2px solid black;
 	background: rgb(239 239 239);
 }
 
@@ -41,8 +40,9 @@ input {
 .barmenu {
   display: flex;
   justify-content: center;
-  border: 2px solid blue;
+  border: 2px solid black;
   height: 50px;
+  background: rgb(239 239 239);
 }
 
 .btn-menu {
