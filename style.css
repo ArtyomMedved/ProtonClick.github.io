@@ -5,6 +5,8 @@ body {
 	touch-action: manipulation;
 	width: 420px;
 	height: 600px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 
@@ -13,7 +15,6 @@ body {
 	width: 418px;
 	height: 680px;
     border: 2px solid black;
-	margin: auto;
 	background: rgb(239 239 239);
 }
 
