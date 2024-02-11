@@ -15,45 +15,45 @@
 				<button class="btn" id="btn1" onclick="incrementClicks()"></button>
 			</div>
 			<div class="barmenu">
-				<button class="btn-menu">Друзья</button>
-				<button class="btn-menu">Рейтинг</button>
+				<button class="btn-menu">
+					<a href="friends.html">Друзья</a>
+				</button>
+				<button class="btn-menu">
+					<a href="top.html">Рейтинг</a>
+				</button>
 				<button class="btn-menu">Задания</button>
 				<button class="btn-menu">Бусты</button>
 			</div>
 		</div>
 	</div>
 	</div>
-    <script>function countFunc(count) {
-        var btnPlus = count.querySelector('.btn');
-        var field = count.querySelector('.js-number');
-        var fieldValue = parseFloat(field.value, 10);
-    
-        btnPlus.addEventListener('click', function() {
-            fieldValue++;
-            field.value = fieldValue;
-          });
-    }
-    
-    var counts = document.querySelectorAll('.item');
-    counts.forEach(countFunc);</script>
-	
-	<script>
-		function incrementClicks() {
-		  if (typeof(Storage) !== "undefined") {
-			if (localStorage.numClicks) {
-			  localStorage.numClicks = Number(localStorage.numClicks) + 1;
-			} else {
-			  localStorage.numClicks = 1;
-			}
-			document.getElementById("number-diet").innerHTML = localStorage.numClicks;
-		  } else {
-			document.getElementById("number-diet").innerHTML = "Unfortunately, your browser does not support web storage...";
-		  }
+    <script>
+		function countFunc(count) {
+			var btnPlus = count.querySelector('.btn');
+			var field = count.querySelector('.js-number');
+			var fieldValue = parseFloat(field.value, 10);
+		
+			btnPlus.addEventListener('click', function() {
+				fieldValue++;
+				field.value = fieldValue;
+				if (typeof(Storage) !== "undefined") {
+					if (localStorage.numClicks) {
+						localStorage.numClicks = Number(localStorage.numClicks) + 1;
+					} else {
+						localStorage.numClicks = 1;
+					}
+					field.value = localStorage.numClicks;
+				} else {
+					field.value = "Unfortunately, your browser does not support web storage...";
+				}
+			});
 		}
+		
+		var counts = document.querySelectorAll('.item');
+		counts.forEach(countFunc);
 		</script>
 		
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="app.js"></script>
-	<script src="script.js"></script>
 </body>
 </html>
