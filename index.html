@@ -10,9 +10,9 @@
 	<div class="container">
 		<div class="inner">
 			<div class="item">
-                <input id="number-diet" class="js-number" type="number" name="number" value="1" readonly>
+                <input id="number-diet" class="js-number" type="number" name="number" value="0" readonly>
 				<br>
-				<button class="btn" id="btn1"></button>
+				<button class="btn" id="btn1" onclick="incrementClicks()"></button>
 			</div>
 			<div class="barmenu">
 				<button class="btn-menu">Друзья</button>
@@ -36,7 +36,24 @@
     
     var counts = document.querySelectorAll('.item');
     counts.forEach(countFunc);</script>
+	
+	<script>
+		function incrementClicks() {
+		  if (typeof(Storage) !== "undefined") {
+			if (localStorage.numClicks) {
+			  localStorage.numClicks = Number(localStorage.numClicks) + 1;
+			} else {
+			  localStorage.numClicks = 1;
+			}
+			document.getElementById("number-diet").innerHTML = localStorage.numClicks;
+		  } else {
+			document.getElementById("number-diet").innerHTML = "Unfortunately, your browser does not support web storage...";
+		  }
+		}
+		</script>
+		
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="app.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>

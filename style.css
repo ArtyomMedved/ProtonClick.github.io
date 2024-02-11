@@ -38,14 +38,52 @@ input {
 }
 
 .barmenu {
-  display: flex;
-  justify-content: center;
-  border: 2px solid black;
-  height: 45px;
-  background: rgb(239 239 239);
+	position: fixed;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    height: 45px;
+	width: 420px;
+    background: rgb(239 239 239);
 }
 
 .btn-menu {
 	font-size: 16px;
 	margin: 5px;
+}
+
+.chill {
+	margin-top: 30px;
+	height: 100px;
+}
+
+.block {
+	display: flex;
+    flex-wrap: wrap;
+	border:1px solid black;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.icon {
+	margin: 5px;
+	height: 30px;
+	border: none;
+	border-radius: 100px;
+}
+
+.nicname {
+	margin: 9px;
+}
+
+.btn-friend {
+	background-image: url(./photo/add_friend.jpg);
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.friend {
+	margin-top: 10px;
+	margin-left: 10px;
 }
