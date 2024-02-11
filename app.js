@@ -10,9 +10,9 @@ let item = "";
 var BackButton = WebApp.BackButton;
 BackButton.show();
 BackButton.onClick(function() {
-  WebApp.showAlert("Нет пути назад!");
-  BackButton.hide();
+    WebApp.showAlert("BackButton clicked");
+    BackButton.hide();
 });
 WebApp.onEvent('backButtonClicked', function() {
-  /* код */
+    Telegram.WebApp.onEvent('backButtonClicked', callback)
 });
