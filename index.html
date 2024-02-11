@@ -47,12 +47,23 @@
 					field.value = "Unfortunately, your browser does not support web storage...";
 				}
 			});
+			
+			if (typeof(Storage) !== "undefined") {
+				if (localStorage.numClicks) {
+					field.value = localStorage.numClicks;
+				} else {
+					localStorage.numClicks = 0;
+					field.value = localStorage.numClicks;
+				}
+			} else {
+				field.value = "Unfortunately, your browser does not support web storage...";
+			}
 		}
 		
 		var counts = document.querySelectorAll('.item');
 		counts.forEach(countFunc);
 		</script>
-		
+			
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="app.js"></script>
 </body>
